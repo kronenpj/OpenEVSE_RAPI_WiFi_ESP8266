@@ -378,7 +378,7 @@ if (wifi_mode == 0 && privateKey != 0){
    if ((millis() - Timer) >= 30000){
      Timer = millis();
      Serial.flush();
-     Serial.println("$GE*B0");
+     Serial.println("$GS*BE");
      delay(100);
        while(Serial.available()) {
          String rapiString = Serial.readStringUntil('\r');
