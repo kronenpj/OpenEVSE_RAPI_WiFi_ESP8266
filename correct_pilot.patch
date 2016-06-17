@@ -1,0 +1,13 @@
+diff --git a/OpenEVSE_RAPI_WiFi_ESP8266.ino b/OpenEVSE_RAPI_WiFi_ESP8266.ino
+index b67d31f..9d250b1 100644
+--- a/OpenEVSE_RAPI_WiFi_ESP8266.ino
++++ b/OpenEVSE_RAPI_WiFi_ESP8266.ino
+@@ -672,7 +672,7 @@ void handleRapiRead() {
+       }
+     }
+     Serial.flush();
+-    Serial.println("$GE*B0");
++    Serial.println("$GS*BE");
+      comm_sent++;
+      delay(100);
+        while(Serial.available()) {
